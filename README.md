@@ -49,7 +49,21 @@ This library gets the job done without changing any of the existing HTML content
 
 ## Setup
 
-`ng add @hettiger/ngx-fragment-link-faker`
+1. `npm i @hettiger/ngx-fragment-link-faker --save`
+2. Import the `FragmentLinkFakerModule` module
+
+```ts
+import { FragmentLinkFakerModule } from '@hettiger/ngx-fragment-link-faker';
+
+@NgModule({
+  imports: [
+    // …
+    FragmentLinkFakerModule,
+  ],
+  // …
+})
+// …
+```
 
 ## Usage
 
@@ -110,6 +124,11 @@ Run `ng test ngx-fragment-link-faker` to execute the unit tests via [Karma](http
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Adheres to / Uses
+
+- [Semantic Versioning 2.0.0](https://semver.org)
+- [Changelogger](https://churchtools.github.io/changelogger/)
 
 ## License
 
