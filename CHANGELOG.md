@@ -1,5 +1,12 @@
 <!-- CHANGELOGGER -->
 
+## [v0.0.3] - 2022-02-12
+
+### Hotfix (1 change)
+
+- Bump version number in package.json
+
+
 ## [v0.0.2] - 2022-02-12
 
 ### Other (1 change)
