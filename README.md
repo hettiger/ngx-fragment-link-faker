@@ -13,10 +13,8 @@ E.g. you have existing HTML content with a table of contents:
 ```html
 <h2>Table of contents</h2>
 <ul>
-  <li>
-    <a href="#some-headline">Some Headline</a>
-    <a href="#another-headline">Another Headline</a>
-  </li>
+  <li><a href="#some-headline">Some Headline</a></li>
+  <li><a href="#another-headline">Another Headline</a></li>
 </ul>
 
 <article>
@@ -29,7 +27,7 @@ E.g. you have existing HTML content with a table of contents:
 <article>
   <h2>
     <a name="another-headline"></a>
-    Some Headline
+    Another Headline
   </h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -88,7 +86,7 @@ Example: `<main mhFakeFragmentLinks mhScrollBehavior="smooth"> … </main>`
 > polyfillSeamlessScroll();
 > ```
 
-## Example
+## Brief example
 
 ```html
 <main mhFakeFragmentLinks [mhScrollTopDelta]="20" mhScrollBehavior="smooth">
@@ -104,6 +102,10 @@ Example: `<main mhFakeFragmentLinks mhScrollBehavior="smooth"> … </main>`
 </main>
 ```
 
+## Demo application
+
+Run `npm run start` to serve the demo application.
+
 ## Code scaffolding
 
 Run `ng generate component component-name --project ngx-fragment-link-faker` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-fragment-link-faker`.
@@ -111,15 +113,11 @@ Run `ng generate component component-name --project ngx-fragment-link-faker` to 
 
 ## Build
 
-Run `ng build ngx-fragment-link-faker` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Publishing
 
-After building your library with `ng build ngx-fragment-link-faker`, go to the dist folder `cd dist/ngx-fragment-link-faker` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngx-fragment-link-faker` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm run publish` to publish the project.
 
 ## Further help
 
@@ -132,4 +130,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## License
 
-The NgxFragmentLinkFaker library is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The NgxFragmentLinkFaker library is open-sourced software licensed under the [MIT license](LICENSE.md).
