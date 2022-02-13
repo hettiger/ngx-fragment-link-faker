@@ -51,3 +51,5 @@ import 'zone.js';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+import { polyfill as polyfillSeamlessScroll } from "seamless-scroll-polyfill";
+polyfillSeamlessScroll();
