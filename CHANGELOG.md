@@ -1,5 +1,12 @@
 <!-- CHANGELOGGER -->
 
+## [v0.0.4] - 2022-02-13
+
+### Other (1 change)
+
+- Add a demo application
+
+
 ## [v0.0.3] - 2022-02-12
 
 ### Hotfix (1 change)
