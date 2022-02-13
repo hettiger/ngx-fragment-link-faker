@@ -13,10 +13,8 @@ E.g. you have existing HTML content with a table of contents:
 ```html
 <h2>Table of contents</h2>
 <ul>
-  <li>
-    <a href="#some-headline">Some Headline</a>
-    <a href="#another-headline">Another Headline</a>
-  </li>
+  <li><a href="#some-headline">Some Headline</a></li>
+  <li><a href="#another-headline">Another Headline</a></li>
 </ul>
 
 <article>
@@ -29,7 +27,7 @@ E.g. you have existing HTML content with a table of contents:
 <article>
   <h2>
     <a name="another-headline"></a>
-    Some Headline
+    Another Headline
   </h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
