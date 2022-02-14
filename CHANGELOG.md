@@ -1,5 +1,12 @@
 <!-- CHANGELOGGER -->
 
+## [v0.1.1] - 2022-02-14
+
+### Other (1 change)
+
+- Add keywords for NPM
+
+
 ## [v0.1.0] - 2022-02-14
 
 ### New feature (1 change)
