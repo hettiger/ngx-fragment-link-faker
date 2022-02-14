@@ -1,14 +1,23 @@
-import { AfterViewInit, Directive, ElementRef, Input, OnDestroy } from '@angular/core';
+import { AfterViewInit, Directive, ElementRef, Inject, Input, OnDestroy, Optional } from '@angular/core';
 import { filter, fromEvent, map, Observable, Subject, takeUntil } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
+import { FAKE_FRAGMENT_LINKS_CONFIG, FakeFragmentLinksConfig } from './fake-fragment-links.config';
 
 @Directive({
   selector: '[mhFakeFragmentLinks]'
 })
 export class FakeFragmentLinksDirective implements AfterViewInit, OnDestroy {
 
-  @Input('mhScrollTopDelta') scrollTopDelta: number = 0;
-  @Input('mhScrollBehavior') scrollBehavior: ScrollToOptions['behavior'] = 'auto';
+  @Input() mhScrollTopDelta?: number;
+  @Input() mhScrollBehavior?: ScrollToOptions['behavior'];
+
+  get scrollTopDelta(): number {
+    return this.mhScrollTopDelta || this.config?.scrollTopDelta || 0;
+  }
+
+  get scrollBehavior(): ScrollToOptions['behavior'] {
+    return this.mhScrollBehavior || this.config?.scrollBehavior || 'auto';
+  }
 
   private destroy$ = new Subject();
   private click$?: Observable<MouseEvent>;
@@ -16,7 +25,8 @@ export class FakeFragmentLinksDirective implements AfterViewInit, OnDestroy {
   constructor(
     private elementRef: ElementRef,
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    @Optional() @Inject(FAKE_FRAGMENT_LINKS_CONFIG) private config: FakeFragmentLinksConfig | null,
   ) {}
 
   ngOnDestroy() {
