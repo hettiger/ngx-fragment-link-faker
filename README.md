@@ -106,6 +106,27 @@ Example: `<main mhFakeFragmentLinks mhScrollBehavior="smooth"> … </main>`
 
 Run `npm run start` to serve the demo application.
 
+## Global configuration
+
+It's possible to provide global defaults for the scroll top delta and scroll behavior:
+
+```ts
+import { FAKE_FRAGMENT_LINKS_CONFIG, FakeFragmentLinksConfig } from 'ngx-fragment-link-faker';
+
+@NgModule({
+  providers: [
+    {
+      provide: FAKE_FRAGMENT_LINKS_CONFIG,
+      useFactory: (): FakeFragmentLinksConfig => ({ scrollTopDelta: 84, scrollBehavior: 'smooth' })
+    }
+  ],
+  // …
+})
+export class AppModule {}
+```
+
+> Input arguments always take precedence over the global defaults you provide.
+
 ## Code scaffolding
 
 Run `ng generate component component-name --project ngx-fragment-link-faker` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-fragment-link-faker`.
@@ -127,6 +148,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 - [Semantic Versioning 2.0.0](https://semver.org)
 - [Changelogger](https://churchtools.github.io/changelogger/)
+- [Gitflow](https://nvie.com/posts/a-successful-git-branching-model/)
 
 ## License
 
