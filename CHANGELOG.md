@@ -1,5 +1,12 @@
 <!-- CHANGELOGGER -->
 
+## [v0.1.0] - 2022-02-14
+
+### New feature (1 change)
+
+- Add support for global defaults
+
+
 ## [v0.0.4] - 2022-02-13
 
 ### Other (1 change)
