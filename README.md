@@ -148,6 +148,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 - [Semantic Versioning 2.0.0](https://semver.org)
 - [Changelogger](https://churchtools.github.io/changelogger/)
+- [Gitflow](https://nvie.com/posts/a-successful-git-branching-model/)
 
 ## License
 
