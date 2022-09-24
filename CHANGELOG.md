@@ -1,5 +1,12 @@
 <!-- CHANGELOGGER -->
 
+## [v0.1.3] - 2022-09-24
+
+### Other (1 change)
+
+- Add Angular 14 support
+
+
 ## [v0.1.2] - 2022-09-24
 
 ### Other (1 change)

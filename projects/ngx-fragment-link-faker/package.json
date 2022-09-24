@@ -2,7 +2,7 @@
   "name": "@hettiger/ngx-fragment-link-faker",
   "description": "Mimics default browser behavior of fragment links in Angular applications.",
   "keywords": ["fragment", "hash", "anchor", "links", "smooth", "scroll", "angular"],
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": {
     "name": "Martin Hettiger",
     "url": "https://www.hettiger.com/"
@@ -11,8 +11,8 @@
   "homepage": "https://github.com/hettiger/ngx-fragment-link-faker",
   "readmeFilename": "README.md",
   "peerDependencies": {
-    "@angular/common": "^13.0.0",
-    "@angular/core": "^13.0.0"
+    "@angular/common": "^13.0.0 || ^14.0.0",
+    "@angular/core": "^13.0.0 || ^14.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
