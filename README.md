@@ -102,6 +102,34 @@ Example: `<main mhFakeFragmentLinks mhScrollBehavior="smooth"> … </main>`
 </main>
 ```
 
+## Router Extra Options
+
+Anchor scrolling may not work when you enable `scrollPositionRestoration` on the `RouterModule`.
+Make sure to also enable the `anchorScrolling` option and set an appropriate `scrollOffset`.
+
+> I.e. if you use `scrollTopDelta: 64` or `[mhScrollTopDelta]="64"` set `scrollOffset` to `[0, 64]`.
+
+```typescript
+@NgModule({
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled',
+    anchorScrolling: 'enabled',
+    scrollOffset: [0, 64],
+  })],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {
+}
+```
+
+In addition to these extra options you optionally need the following global styles for smooth scroll support:
+
+```css
+html {
+  scroll-behavior: smooth;
+}
+```
+
 ## Demo application
 
 Run `npm run start` to serve the demo application.
