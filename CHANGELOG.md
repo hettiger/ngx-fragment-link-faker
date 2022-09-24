@@ -1,5 +1,12 @@
 <!-- CHANGELOGGER -->
 
+## [v0.1.2] - 2022-09-24
+
+### Other (1 change)
+
+- Document behavior on various router extra options
+
+
 ## [v0.1.1] - 2022-02-14
 
 ### Other (1 change)
